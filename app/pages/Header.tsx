@@ -17,6 +17,14 @@ function Header(props: any) {
             />
             <h1>Sistemas de Pedidos</h1>
             <h2>+ 71 123 456 789</h2>
+            <ul>
+                <li>AB</li>
+                <li>B</li>
+                <li>C</li>
+                <li>D</li>
+                <li>E</li>
+
+            </ul>
         </div>
     );
 }
