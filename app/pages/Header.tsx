@@ -10,7 +10,6 @@ const font = Dancing_Script({ subsets: ['latin'] })
 function Header(props: any) {
     return (
         <div className={`w-full p-5 text-center text-white font-bold bg-red-600 text-5xl h-[120px] flex justify-between ${font.className}`}>
-            <div className={`absolute right-0 flex justify-between items-center ${font.className}`}></div>
             <Image
                 src="/pizza.png"
                 alt="Pizza"
