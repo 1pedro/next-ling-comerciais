@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from "next/image";
+import font from 
 
 import { Dancing_Script, Inclusive_Sans } from 'next/font/google'
 
@@ -15,13 +16,12 @@ function Header(props: any) {
                 width={110}
                 style={{ width: 110}}
             />
-            <h1>Sistemas de Pedidos</h1>
+            <h1>FoodStips</h1>
             <ul>
-                <li>AB</li>
-                <li>B</li>
-                <li>C</li>
-                <li>D</li>
-                <li>E</li>
+                <li>Home</li>
+                <li>Serviços</li>
+                <li>Cardápio</li>
+                <li>Contato</li>
 
             </ul>
         </div>
