@@ -16,7 +16,6 @@ function Header(props: any) {
                 style={{ width: 110}}
             />
             <h1>Sistemas de Pedidos</h1>
-            <h2>+ 71 123 456 789</h2>
             <ul>
                 <li>AB</li>
                 <li>B</li>
