@@ -1,3 +1,4 @@
+'use client'
 import React, {ReactElement} from 'react';
 import {getAuth, onAuthStateChanged, User as FirebaseUser} from 'firebase/auth';
 import firebase_app from '../firebase/config';
