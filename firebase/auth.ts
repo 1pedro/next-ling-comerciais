@@ -4,7 +4,7 @@ import {createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword} fro
 const auth = getAuth(firebase_app);
 
 
-export async function signUp(email: string, password: string) {
+export async function register(email: string, password: string) {
     let result = null,
         error = null;
     try {
@@ -16,7 +16,7 @@ export async function signUp(email: string, password: string) {
     return {result, error};
 }
 
-export async function signIn(email: string, password: string) {
+export async function login(email: string, password: string) {
     let result = null,
         error = null;
     try {

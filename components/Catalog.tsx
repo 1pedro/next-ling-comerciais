@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import {useRecoilState} from 'recoil'
-import {CartContext} from '@/app/context/CartContext'
+import {CartContext} from '@/context/CartContext'
 import toast from 'react-hot-toast';
 import {Product} from "@/app/type";
 

@@ -1,11 +1,11 @@
 'use client'
 import React from 'react';
 import Image from 'next/image';
-import logo from '../../public/assets/icon_pizza.png';
-import whats from '../../public/assets/whats.png';
+import logo from '../public/assets/icon_pizza.png';
+import whats from '../public/assets/whats.png';
 import Link from 'next/link';
 import {BsCart} from 'react-icons/bs'
-import {CartContext} from '@/app/context/CartContext';
+import {CartContext} from '@/context/CartContext';
 import {useRecoilState} from 'recoil'
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
     const [carrinhoItem] = useRecoilState(CartContext)
     return (
         <div
-            className='bg-red-700 h-16 w-full flex text-white items-center justify-around gap-24 p-12 text-center fixed'>
+            className='bg-red-700 h-16 w-full flex text-white items-center justify-around gap-24 p-12 text-center'>
             <div className='flex items-center justify-center '>
                 <Image src={logo} alt="logo" width={50} height={50}/>
                 <h1 className='text-white text-4xl'>FoodStiks</h1>
@@ -27,15 +27,15 @@ const Navbar = () => {
                 </ul>
             </div>
             <div>
-                <button className='bg-yellow-200 text-black rounded-2xl text-base w-32 p-1	'><Link
-                    href="/login">Login</Link></button>
+                <Link className={'bg-yellow-200 text-black rounded-2xl text-base w-32 py-2 px-4'}
+                      href="/login">Login</Link>
             </div>
             <div className='flex items-center justify-center gap-2'>
                 <Image src={whats} alt="" width={30}/>
                 <p>000000000</p>
             </div>
             <div className='relative cursor-pointer'>
-                <Link href="/app/pages/Cart">
+                <Link href="/cart">
                     <div>
                         <BsCart size={35}/>
                         <span
