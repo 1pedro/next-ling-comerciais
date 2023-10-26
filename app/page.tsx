@@ -1,13 +1,15 @@
-import Image from 'next/image'
-import Header from "@/app/pages/Header";
-import Footer from "@/app/pages/Footer";
+'use client'
+import './globals.css'
+import data from "../dados.json"
+import {RecoilRoot} from "recoil";
+import {Toaster} from "react-hot-toast";
+import Home from "@/app/pages/Home";
 
-
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-        <Header />
-        <Footer />
-    </main>
-  )
+export default function Page() {
+    return (
+        <RecoilRoot>
+            <Toaster position='bottom-center'/>
+            <Home products={data}/>
+        </RecoilRoot>
+    )
 }
