@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import Image from 'next/image';
-import home_img from '../../public/assets/foodstips-back.jpg'
+import home_img from '../public/assets/foodstips-back.jpg'
 
 const Hero = () => {
     return <div className='w-full flex relatuive pt-24'>

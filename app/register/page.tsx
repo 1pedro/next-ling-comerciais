@@ -1,9 +1,10 @@
 'use client'
+
 import React, {FormEvent} from "react";
-import {signUp} from "../firebase/auth";
+import {register} from "@/firebase/auth";
 import {useRouter} from 'next/navigation'
 
-function SignUp() {
+function Page() {
     const [email, setEmail] = React.useState('')
     const [password, setPassword] = React.useState('')
     const router = useRouter()
@@ -11,7 +12,7 @@ function SignUp() {
     const handleForm = async (event: FormEvent) => {
         event.preventDefault()
 
-        const {result, error} = await signUp(email, password);
+        const {result, error} = await register(email, password);
 
         if (error) {
             return console.log(error)
@@ -23,7 +24,7 @@ function SignUp() {
     }
     return (<div className="wrapper">
         <div className="form-wrapper">
-            <h1 className="mt-60 mb-30">Sign up</h1>
+            <h1 className="mt-60 mb-30">Register</h1>
             <form onSubmit={handleForm} className="form">
                 <label htmlFor="email">
                     <p>Email</p>
@@ -35,11 +36,11 @@ function SignUp() {
                     <input onChange={(e) => setPassword(e.target.value)} required type="password" name="password"
                            id="password" placeholder="password"/>
                 </label>
-                <button type="submit">Sign up</button>
+                <button type="submit">Criar Conta</button>
             </form>
         </div>
     </div>);
 
 }
 
-export default SignUp;
+export default Page;
