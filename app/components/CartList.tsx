@@ -2,11 +2,10 @@
 
 import React from 'react';
 import Image from 'next/image'
+import {Product} from "@/app/type";
 
-const ListaCarrinho = ({data}: { data: any }) => {
-
-    const {name, image, quantidade, price} = data
-    console.log(data)
+const CartList = ({product}: { product: Product }) => {
+    const {name, image, quantidade, price} = product
 
     return (
         <div>
@@ -22,4 +21,4 @@ const ListaCarrinho = ({data}: { data: any }) => {
         </div>
     )
 }
-export default ListaCarrinho
+export default CartList

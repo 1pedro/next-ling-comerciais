@@ -1,11 +1,10 @@
 'use client'
 import React from 'react';
 import Image from 'next/image';
-import home_img from '../public/assets/foodstips-back.jpg'
+import home_img from '../../public/assets/foodstips-back.jpg'
 
-const Home1 = () => {
+const Hero = () => {
     return <div className='w-full flex relatuive pt-24'>
-
         <div className='w-6/12 text-center p-6 '>
             <h1 className='text-5xl p-6 font-bold'>FoodStiks</h1>
             <p className=' text-3xl text-justify font-bold'>A lunmeal oferece a melhor experiência aos seus clientes,
@@ -16,8 +15,7 @@ const Home1 = () => {
         <div className='w-6/12'>
             <Image src={home_img} alt="" width={690} height={800}/>
         </div>
-
     </div>
 }
 
-export default Home1
+export default Hero

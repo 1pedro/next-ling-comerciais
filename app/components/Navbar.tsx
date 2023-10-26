@@ -1,16 +1,16 @@
 'use client'
 import React from 'react';
 import Image from 'next/image';
-import logo from '../public/assets/icon_pizza.png';
-import whats from '../public/assets/whats.png';
+import logo from '../../public/assets/icon_pizza.png';
+import whats from '../../public/assets/whats.png';
 import Link from 'next/link';
 import {BsCart} from 'react-icons/bs'
-import {carroState} from '@/portas/carroState';
+import {CartContext} from '@/app/context/CartContext';
 import {useRecoilState} from 'recoil'
 
 const Navbar = () => {
 
-    const [carrinhoItem] = useRecoilState(carroState)
+    const [carrinhoItem] = useRecoilState(CartContext)
     return (
         <div
             className='bg-red-700 h-16 w-full flex text-white items-center justify-around gap-24 p-12 text-center fixed'>
@@ -35,7 +35,7 @@ const Navbar = () => {
                 <p>000000000</p>
             </div>
             <div className='relative cursor-pointer'>
-                <Link href="/cart">
+                <Link href="/app/pages/Cart">
                     <div>
                         <BsCart size={35}/>
                         <span
