@@ -8,10 +8,14 @@ import './globals.css'
 
 function Body({children}: { children: React.ReactNode }) {
     return (
-        <RecoilRoot>
+
+        <body style={{display: 'flex', flexDirection: 'column', minHeight: '100vh'}}>
+        <>
             <Toaster position='bottom-center'/>
-            <body style={{display: 'flex', flexDirection: 'column', minHeight: '100vh'}}>{children}</body>
-        </RecoilRoot>
+            <RecoilRoot>{children}</RecoilRoot>
+        </>
+        </body>
+        
     );
 }
 

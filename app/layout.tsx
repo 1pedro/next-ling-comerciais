@@ -1,4 +1,5 @@
 import Body from "@/app/body";
+import {AuthContextProvider} from "@/context/AuthContext";
 
 export const metadata = {
     title: 'FoodStiks',
@@ -10,7 +11,10 @@ export default function RootLayout({children}: {
 }) {
     return (
         <html lang="en">
-        <Body>{children}</Body>
+        <AuthContextProvider>
+
+            <Body>{children}</Body>
+        </AuthContextProvider>
         </html>
     )
 }

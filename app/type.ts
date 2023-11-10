@@ -6,3 +6,12 @@ export type Product = {
     "text": string,
     "quantidade": number
 }
+
+export type Order = {
+    id: string,
+    email: string,
+    products: Product[],
+    status: "pending" | "paid" | "delivered" | "canceled"
+    date: string
+    total: number;
+}

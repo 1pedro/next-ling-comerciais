@@ -1,24 +1,70 @@
 'use client'
 
 import React from 'react';
-import Image from 'next/image'
 import {Product} from "@/app/type";
+import CartItem from "@/components/CartItem";
+import {useAuthContext} from "@/context/AuthContext";
+import {useRecoilState} from "recoil";
+import {CartContext} from "@/context/CartContext";
+import {NumberToReais} from "@/helpers";
+import {addOrder} from "@/firebase/orders";
+import {uuidv4} from "@firebase/util";
+import Link from "next/link";
 
-const CartList = ({product}: { product: Product }) => {
-    const {name, image, quantidade, price} = product
+const CartList = ({products}: { products: Product[] }) => {
+    const items = products.map(item => <CartItem key={item.id} product={item}/>)
+    const {user} = useAuthContext()
+    const {email} = user || {email: ''};
+    const total = products.reduce((acc, item) => acc + item.price * item.quantidade, 0)
 
-    return (
-        <div>
-            <div className='bg-yellow-200 max-w-[800px] mx-auto pt-24 px-6 flex gap-3 items-center justify-between'>
-                <Image width={200} height={300} src={image} alt="" className='p-2'/>
+    const [_, setCartItems] = useRecoilState(CartContext)
 
-                <div>
-                    <div className='font-bold text-2xl'>{name}</div>
-                    <div>Quantidade: {quantidade}</div>
+    async function handleOrder() {
+        const id = uuidv4();
+
+        await addOrder(id, {
+            id,
+            email: email,
+            products,
+            status: 'pending',
+            date: new Date().toISOString(),
+            total
+        })
+
+    }
+
+    const button = user && email ? <button
+        className='text-right text-white py-3 px-10 mt-6 block  bg-red-600 rounded-xl font-bold'
+        onClick={handleOrder}>Finalizar Compra
+    </button> : <Link
+        className='text-right text-white py-3 px-10 mt-6 block bg-red-600 rounded-xl font-bold block'
+        href={"/login"}>Entrar e Finalizar Compra
+    </Link>
+
+    const clearCartButton = <button
+        className='text-right text-white py-3 px-10 mt-6 block bg-red-600 rounded-xl font-bold'
+        onClick={() => setCartItems([])}>Limpar Carrinho</button>
+
+    if (products.length === 0) {
+        return (<>
+            <h1 className='text-black text-lg font-bold text-center mt-10'>Seu carrinho não possui nenhum item
+                adicionado.</h1>
+            <a href={"/"}
+               className={"text-center w-1/3 mx-auto text-white py-3 px-10 mt-6 block bg-red-600 rounded-xl font-bold block"}>Voltar
+                para o catálogo</a>
+        </>)
+
+    } else {
+        return (
+            <div className={"py-10 w-1/2 mx-auto"}>
+                {items}
+                <h2 className='text-right text-2xl font-bold mt-5'>Total: {NumberToReais(total)}</h2>
+                <div className={"flex mx-auto justify-between"}>
+                    {button} {clearCartButton}
                 </div>
-                <div className='text-3xl font-bold'>${price * quantidade}</div>
             </div>
-        </div>
-    )
+        )
+    }
+
 }
 export default CartList

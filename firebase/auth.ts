@@ -1,8 +1,18 @@
-import firebase_app from "./config";
-import {createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword} from "firebase/auth";
+import {auth} from "./config";
+import {createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut} from "firebase/auth";
 
-const auth = getAuth(firebase_app);
+export async function doSignOut() {
+    let result = null,
+        error = null;
+    try {
+        result = await signOut(auth);
+    } catch (e) {
+        error = e;
+    }
+    console.log(result);
 
+    return {result, error};
+}
 
 export async function register(email: string, password: string) {
     let result = null,

@@ -29,7 +29,7 @@ function Page() {
                         <h1 className='text-center text-5xl text-white p-8 uppercase font-bold '>Confira nosso
                             cardápio!</h1>
                         <div className='grid grid-cols-3 gap-5 '>
-                            {products.map(product => <Catalog product={product} key={product.id}/>)}
+                            <Catalog products={products}/>
                         </div>
                     </div>
                 </div>
