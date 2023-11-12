@@ -4,7 +4,7 @@ import Image from 'next/image';
 import home_img from '../public/assets/foodstips-back.jpg'
 
 const Hero = () => {
-    return <div className='w-full flex relatuive pt-24'>
+    return <div className='w-full flex relatuive pt-20'>
         <div className='w-6/12 text-center p-6 '>
             <h1 className='text-5xl p-6 font-bold'>FoodStiks</h1>
             <p className=' text-3xl text-justify font-bold'>A lunmeal oferece a melhor experiência aos seus clientes,
