@@ -1,15 +1,15 @@
 [
   {
     "id": 1,
-    "name": "Pizza de ",
+    "name": "Pizza de Frango com Catupiry ",
     "price": 40,
     "image": "/pizza1.jpg",
-    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy",
+    "text": "Uma combinação irresistível de sabores, unindo a suculência do frango ao cremoso catupiry em uma deliciosa massa.",
     "quantidade": 1
   },
   {
     "id": 2,
-    "name": "pizza2",
+    "name": "Cogumelo",
     "price": 40,
     "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy",
     "image": "/pizza2.jpg",
