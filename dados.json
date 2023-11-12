@@ -9,63 +9,63 @@
   },
   {
     "id": 2,
-    "name": "Cogumelo",
-    "price": 40,
-    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy",
+    "name": "Pizza de Cogumelos",
+    "price": 50,
+    "text": "Uma experiência gastronômica única, onde a textura delicada e o sabor intenso dos cogumelos se fundem em cada mordida.",
     "image": "/pizza2.jpg",
     "quantidade": 1
   },
   {
     "id": 3,
-    "name": "pizza3",
-    "price": 40,
+    "name": "Pizza Vegana",
+    "price": 35,
     "image": "/pizza3.jpg",
-    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy",
+    "text": "Uma deliciosa alternativa sem ingredientes de origem animal, apresentando uma explosão de sabores vegetais",
     "quantidade": 1
   },
   {
     "id": 4,
-    "name": "pizza3",
-    "price": 40,
-    "image": "/pizza3.jpg",
-    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy",
-    "quantidade": 1
-  },
-  {
-    "id": 5,
-    "name": "pizza4",
+    "name": "Pizza de",
     "price": 40,
     "image": "/pizza4.jpg",
     "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy",
     "quantidade": 1
   },
   {
-    "id": 6,
-    "name": "pizza5",
+    "id": 5,
+    "name": "Pizza de",
     "price": 40,
     "image": "/pizza5.jpg",
     "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy",
     "quantidade": 1
   },
   {
-    "id": 7,
-    "name": "pizza6",
+    "id": 6,
+    "name": "Pizza de",
     "price": 40,
     "image": "/pizza6.jpg",
     "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy",
     "quantidade": 1
   },
   {
-    "id": 8,
-    "name": "pizza7",
+    "id": 7,
+    "name": "Pizza de",
     "price": 40,
     "image": "/pizza7.jpg",
     "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy",
     "quantidade": 1
   },
   {
+    "id": 8,
+    "name": "Pizza de",
+    "price": 40,
+    "image": "/pizza8.jpg",
+    "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy",
+    "quantidade": 1
+  },
+  {
     "id": 9,
-    "name": "pizza9",
+    "name": "Pizza de",
     "price": 40,
     "image": "/pizza9.jpg",
     "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy",
