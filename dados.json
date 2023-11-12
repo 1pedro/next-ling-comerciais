@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "name": "Pizza de Cogumelos",
+    "name": "Pizza  Cogumelos",
     "price": 50,
     "text": "Uma experiência gastronômica única, onde a textura delicada e o sabor intenso dos cogumelos se fundem em cada mordida e irresistivelmente crocante.",
     "image": "/pizza2.jpg",
@@ -20,7 +20,7 @@
     "name": "Pizza Vegana",
     "price": 35,
     "image": "/pizza3.jpg",
-    "text": "Uma deliciosa alternativa sem ingredientes de origem animal, apresentando uma explosão de sabores vegetais que agrada tanto aos veganos e amantes de pizza.",
+    "text": "Uma deliciosa alternativa sem ingredientes de origem animal, apresentando uma explosão de sabores vegetais que agrada tanto aos veganos e amantes de pizza de forma deliciosa.",
     "quantidade": 1
   },
   {
