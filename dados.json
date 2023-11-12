@@ -4,14 +4,14 @@
     "name": "Pizza de Frango com Catupiry ",
     "price": 40,
     "image": "/pizza1.jpg",
-    "text": "Uma combinação irresistível de sabores, unindo a suculência do frango ao cremoso catupiry em uma deliciosa massa.",
+    "text": "Uma combinação irresistível de sabores, unindo a suculência do frango ao cremoso catupiry em uma deliciosa massa e irresistivelmente crocante.",
     "quantidade": 1
   },
   {
     "id": 2,
     "name": "Pizza de Cogumelos",
     "price": 50,
-    "text": "Uma experiência gastronômica única, onde a textura delicada e o sabor intenso dos cogumelos se fundem em cada mordida.",
+    "text": "Uma experiência gastronômica única, onde a textura delicada e o sabor intenso dos cogumelos se fundem em cada mordida e irresistivelmente crocante.",
     "image": "/pizza2.jpg",
     "quantidade": 1
   },
@@ -20,15 +20,15 @@
     "name": "Pizza Vegana",
     "price": 35,
     "image": "/pizza3.jpg",
-    "text": "Uma deliciosa alternativa sem ingredientes de origem animal, apresentando uma explosão de sabores vegetais que agrada tanto aos veganos quanto aos amantes tradicionais de pizza",
+    "text": "Uma deliciosa alternativa sem ingredientes de origem animal, apresentando uma explosão de sabores vegetais que agrada tanto aos veganos e amantes de pizza.",
     "quantidade": 1
   },
   {
     "id": 4,
-    "name": "Pizza de Calabresa",
+    "name": "Pizza Calabresa",
     "price": 40,
     "image": "/pizza4.jpg",
-    "text": "Uma combinação clássica de massa crocante, molho de tomate saboroso e fatias generosas de calabresa defumada ",
+    "text": "Uma combinação clássica de massa crocante, molho de tomate saboroso e fatias generosas de calabresa defumada e irresistivelmente crocante.",
     "quantidade": 1
   },
   {
@@ -44,7 +44,7 @@
     "name": "Pizza Pepperoni",
     "price": 40,
     "image": "/pizza6.jpg",
-    "text": "Uma explosão de sabor ousado e picante, onde uma generosa quantidade de pepperoni, levemente defumado e irresistivelmente crocante, ",
+    "text": "Uma explosão de sabor ousado e picante, onde uma generosa quantidade de pepperoni, levemente defumado e irresistivelmente crocante.",
     "quantidade": 1
   },
   {
@@ -52,7 +52,7 @@
     "name": "Pizza de Atum",
     "price": 45,
     "image": "/pizza7.jpg",
-    "text": "Uma combinação perfeita de sabor marinho e textura suculenta, onde o atum enlatado se harmoniza com o queijo derretido e o molho de tomate, ",
+    "text": "Uma combinação perfeita de sabor marinho e textura suculenta, onde o atum enlatado se harmoniza com o queijo derretido e o molho de tomate.",
     "quantidade": 1
   },
   {
@@ -68,7 +68,7 @@
     "name": "Pizza Mista",
     "price": 40,
     "image": "/pizza9.jpg",
-    "text": "Uma combinação equilibrada de sabores clássicos, unindo a tradicional muçarela com o sabor inconfundível da calabresa, proporcionando uma experiência deliciosamente versátil em cada fatia.",
+    "text": "Uma combinação equilibrada de sabores clássicos, unindo a tradicional muçarela com o sabor inconfundível da calabresa e irresistivelmente crocante.",
     "quantidade": 1
   }
 ]
