@@ -7,7 +7,7 @@ function CatalogItem({product, appendItems}: { product: Product, appendItems: (p
 
     return (
         <div className='flex justify-center'>
-            <div className='w-72 p-4 bg-yellow-200 m-8'>
+            <div className='w-72 p-4 bg-yellow-200 m-12'>
                 <Image src={product.image} alt="" width={600} height={600}/>
                 <div>
                     <h1 className='text-center p-1 font-bold text-3xl'>{product.name}</h1>

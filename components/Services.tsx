@@ -2,7 +2,7 @@
 
 const Services = () => {
     return <div className='bg-yellow-300'>
-        <h1 className='text-center text-5xl text-black p-8 uppercase font-bold '>Confira nosso cardápio!</h1>
+        <h1 className='text-center text-5xl text-black p-8 uppercase font-bold '>Confira nossos serviços!</h1>
         <div className='flex gap-16 p-12'>
             <div className='w-[480px] bg-red-700'>
                 <img src={'/assets/bars.jpg'} alt=""/>
