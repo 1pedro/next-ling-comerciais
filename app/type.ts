@@ -1,10 +1,11 @@
 export type Product = {
-    "id": number,
+    "id": string,
     "name": string,
     "price": number,
     "image": string,
     "text": string,
     "quantidade": number
+    available: boolean
 }
 
 export type Order = {
@@ -15,3 +16,5 @@ export type Order = {
     date: string
     total: number;
 }
+
+

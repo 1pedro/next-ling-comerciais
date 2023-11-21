@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import Head from "next/head";
 import Navbar from "@/components/Navbar";
 
@@ -8,11 +8,22 @@ import Hero from "@/components/Hero";
 import Catalog from "@/components/Catalog";
 import Services from "@/components/Services";
 import Footer from "@/components/Footer";
-
-import products from "../dados.json"
+import {getAvailableProducts} from "@/firebase/products";
+import {Product} from "@/app/type";
 
 
 function Page() {
+    const [products, setProducts] = React.useState<Product[]>([])
+    useEffect(() => {
+        async function fetchProducts() {
+            const {result: data} = await getAvailableProducts();
+
+            setProducts(data)
+        }
+
+        fetchProducts()
+
+    }, [])
     return (
         <>
             <Head>

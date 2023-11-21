@@ -5,14 +5,13 @@ import {login, register} from "@/firebase/auth";
 import {useRouter} from 'next/navigation'
 import Navbar from "@/components/Navbar";
 import Main from "@/components/Main";
-
-const admins: string[] = []
+import * as admins from "@/admins.json";
 
 function Page() {
     const [email, setEmail] = React.useState('')
     const [password, setPassword] = React.useState('')
     const router = useRouter()
-    
+
 
     const handleFormLogin = async (event: FormEvent) => {
         event.preventDefault()

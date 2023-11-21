@@ -10,6 +10,7 @@ import {useRecoilState} from 'recoil'
 import {doSignOut} from "@/firebase/auth";
 import {useRouter} from "next/navigation";
 import {useAuthContext} from "@/context/AuthContext";
+import * as admins from "@/admins.json"
 
 
 const Navbar = () => {
@@ -41,6 +42,9 @@ const Navbar = () => {
                     <li className='text-lg font-bold'><Link href="/">Serviços</Link></li>
 
                     {user && (<li className='text-lg font-bold'><Link href="/orders">Meus Pedidos</Link></li>)}
+
+                    {user && admins.includes(user.email) && (
+                        <li className='text-lg font-bold'><Link href="/admin">Admin</Link></li>)}
                 </ul>
             </div>
             <div>
