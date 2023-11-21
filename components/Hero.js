@@ -1,9 +1,10 @@
-'use client'
-import React from 'react';
-import Image from 'next/image';
-import home_img from '../public/assets/foodstips-back.jpg'
-
-const Hero = () => {
+'use client';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var react_1 = require("react");
+var image_1 = require("next/image");
+var foodstips_back_jpg_1 = require("../public/assets/foodstips-back.jpg");
+var Hero = function () {
     return <div className='w-full flex relatuive pt-px'>
         <div className='w-6/12 text-center p-6 '>
             <h1 className='text-5xl p-6 font-bold'>FoodStiks</h1>
@@ -13,9 +14,8 @@ const Hero = () => {
             <button className='mt-10 mb-18 bg-red-700 text-white text-3xl p-4 rounded-2xl '>Faça seu pedido!</button>
         </div>
         <div className='w-6/12'>
-            <Image src={home_img} alt="" width={690} height={800}/>
+            <image_1.default src={foodstips_back_jpg_1.default} alt="" width={690} height={800}/>
         </div>
-    </div>
-}
-
-export default Hero
+    </div>;
+};
+exports.default = Hero;

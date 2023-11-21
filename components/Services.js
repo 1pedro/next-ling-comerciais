@@ -1,6 +1,7 @@
-'use client'
-
-const Services = () => {
+'use client';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Services = function () {
     return <div className='bg-yellow-300'>
         <h1 className='text-center text-5xl text-black p-8 uppercase font-bold '>Confira nossos serviços!</h1>
         <div className='flex gap-16 p-12'>
@@ -23,7 +24,6 @@ const Services = () => {
                     pagamento, sendo elas: dinheiro , cartão de crédito , cartão de débito e PIX.</p>
             </div>
         </div>
-    </div>
-}
-
-export default Services
+    </div>;
+};
+exports.default = Services;
