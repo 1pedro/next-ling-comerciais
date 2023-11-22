@@ -27,7 +27,7 @@ const Navbar = () => {
 
     return (
         <div
-            className='bg-red-700 h-16 w-full flex text-white items-center justify-around gap-24 p-12 text-center'>
+            className='bg-red-700 h-20 w-full flex text-white items-center justify-around gap-24 p-12 text-center'>
             <a href={"/"}>
                 <div className='flex items-center justify-center '>
                     <Image src={logo} alt="logo" width={50} height={50}/>
