@@ -10,7 +10,7 @@ import {useRecoilState} from 'recoil'
 import {doSignOut} from "@/firebase/auth";
 import {useRouter} from "next/navigation";
 import {useAuthContext} from "@/context/AuthContext";
-import * as admins from "@/admins.json"
+import admins from "../admins.json"
 
 
 const Navbar = () => {

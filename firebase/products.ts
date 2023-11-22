@@ -17,6 +17,8 @@ export async function getAvailableProducts(): Promise<{ result: any, error: any 
         snapshot = await getDocs(q)
         const docSnapshots = snapshot.docs;
 
+        console.log(docSnapshots.length)
+
         for (const i in docSnapshots) {
             const doc = docSnapshots[i].data();
             result.push({id: docSnapshots[i].id, ...doc})

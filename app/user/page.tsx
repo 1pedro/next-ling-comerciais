@@ -20,7 +20,6 @@ function Page() {
         <AuthContextProvider>
             <>
                 <Navbar/>
-                {items.length ? (<h1>Falta pouco para confirmamos seu pedido!</h1>) : ""}
                 <CartList products={items}/>
             </>
         </AuthContextProvider>

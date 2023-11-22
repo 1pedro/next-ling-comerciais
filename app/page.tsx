@@ -14,9 +14,12 @@ import {Product} from "@/app/type";
 
 function Page() {
     const [products, setProducts] = React.useState<Product[]>([])
+
     useEffect(() => {
         async function fetchProducts() {
-            const {result: data} = await getAvailableProducts();
+            const {result: data, error} = await getAvailableProducts();
+
+            console.log({data, error})
 
             setProducts(data)
         }

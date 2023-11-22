@@ -5,7 +5,7 @@ import {login, register} from "@/firebase/auth";
 import {useRouter} from 'next/navigation'
 import Navbar from "@/components/Navbar";
 import Main from "@/components/Main";
-import * as admins from "@/admins.json";
+import admins from "../../admins.json";
 
 function Page() {
     const [email, setEmail] = React.useState('')
